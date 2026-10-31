@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Coding Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Coding Assistant</h1>
+            <p>Generate, explain, and debug code with AI.</p>
+        </header>
+
+```
+    <main>
+        <label for="prompt">Enter your coding request</label>
+        <textarea
+            id="prompt"
+            placeholder="Example: Write a Python program to reverse a string..."
+            rows="7"
+        ></textarea>
+
+        <label for="language">Programming language</label>
+        <select id="language">
+            <option value="Python">Python</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Java">Java</option>
+            <option value="SQL">SQL</option>
+            <option value="C++">C++</option>
+        </select>
+
+        <div class="buttons">
+            <button data-action="generate">Generate Code</button>
+            <button data-action="explain">Explain Code</button>
+            <button data-action="debug">Debug Code</button>
+        </div>
+
+        <section class="result-section">
+            <h2>AI Response</h2>
+            <p id="status"></p>
+            <pre id="result">Your AI response will appear here.</pre>
+        </section>
+    </main>
+</div>
+
+<script src="/static/script.js"></script>
+```
+
+</body>
+</html>
